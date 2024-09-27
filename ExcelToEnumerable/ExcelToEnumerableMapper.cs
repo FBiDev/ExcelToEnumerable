@@ -231,7 +231,10 @@ namespace ExcelToEnumerable
 
             while (worksheet.CurrentRowNumber < options.StartRow)
             {
-                worksheet.ReadNext();
+                if(worksheet.ReadNext() == false)
+                {
+                    break;
+                }
             }
 
             return header;
