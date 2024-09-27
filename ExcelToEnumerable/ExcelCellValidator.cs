@@ -3,7 +3,7 @@ using ExcelToEnumerable.Exceptions;
 
 namespace ExcelToEnumerable
 {
-    internal class ExcelCellValidator
+    public class ExcelCellValidator
     {
         public string Message { get; set; }
         

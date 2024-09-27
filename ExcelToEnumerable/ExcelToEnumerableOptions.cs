@@ -5,7 +5,7 @@ using System.Linq;
 namespace ExcelToEnumerable
 {
     [Serializable]
-    internal class ExcelToEnumerableOptions<T> : IExcelToEnumerableOptions<T>
+    public class ExcelToEnumerableOptions<T> : IExcelToEnumerableOptions<T>
     {
         private Dictionary<string, string> _customHeaderNames;
         private Dictionary<string, Func<object, object>> _customMappings;

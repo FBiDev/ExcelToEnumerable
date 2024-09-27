@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ExcelToEnumerable
 {
-    internal interface IExcelToEnumerableOptions<T>
+    public interface IExcelToEnumerableOptions<T>
     {
         BlankRowBehaviour BlankRowBehaviour { get; }
         

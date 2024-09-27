@@ -10,7 +10,7 @@ using SpreadsheetCellRef;
 
 namespace ExcelToEnumerable
 {
-    internal class ExcelToEnumerableOptionsBuilder<T> : IExcelToEnumerableOptionsBuilder<T>
+    public class ExcelToEnumerableOptionsBuilder<T> : IExcelToEnumerableOptionsBuilder<T>
     {
         private readonly ExcelToEnumerableOptions<T> _options = new ExcelToEnumerableOptions<T>
         {

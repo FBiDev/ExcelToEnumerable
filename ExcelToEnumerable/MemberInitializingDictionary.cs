@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace ExcelToEnumerable
 {
-    internal class MemberInitializingDictionary<TKey, TValue> : Dictionary<TKey, TValue> where TValue : new()
+    public class MemberInitializingDictionary<TKey, TValue> : Dictionary<TKey, TValue> where TValue : new()
     {
         public new TValue this[TKey index]
         {

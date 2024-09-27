@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace ExcelToEnumerable
 {
-    internal class ExcelToEnumerableCollectionConfiguration
+    public class ExcelToEnumerableCollectionConfiguration
     {
         public string PropertyName { get; set; }
         
