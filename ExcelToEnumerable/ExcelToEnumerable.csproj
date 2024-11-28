@@ -29,19 +29,23 @@
         </CustomCommands>
       </CustomCommands>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Remove="Deps\ExcelNumberFormat.dll" />
+      <None Remove="Deps\LightweightExcelReader.pdb" />
+      <None Remove="Deps\LightweightExcelReader.xml" />
+      <None Remove="Deps\SpreadsheetCellRef.pdb" />
+    </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.0" PrivateAssets="All" />
     </ItemGroup>
     <ItemGroup>
       <Reference Include="LightweightExcelReader">
-        <HintPath>..\packages\LightweightExcelReader.dll</HintPath>
+        <HintPath>Deps\LightweightExcelReader.dll</HintPath>
       </Reference>
       <Reference Include="SpreadsheetCellRef">
         <HintPath>Deps\SpreadsheetCellRef.dll</HintPath>
       </Reference>
-    </ItemGroup>
-    <ItemGroup>
-      <Folder Include="Deps\" />
     </ItemGroup>
 
 
